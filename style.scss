@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+//* Variables *//
+
+//? Theme colors ?//
+$first-color: rgb(14, 36, 49);
+$second-color: rgb(106, 89, 209);
+$third-color: rgb(119, 119, 119);
+$white-color: rgb(255, 255, 255);
+
+//? Hover colors ?//
+$hover-color: rgb(97, 79, 208);
+
+//? Background colors ?//
+$body-bg-color: rgb(254, 254, 254);
+$card-bg-color: rgb(255, 255, 255);
+$modal-bg-color: rgb(255, 255, 255);
+$bg-transparent-color: rgba(0, 0, 0, 0.1);
+$transparent-color-01: rgba(0, 0, 0, 0.1);
+$transparent-color-02: rgba(106, 89, 209, 0.1);
+$line-color: rgb(215, 215, 215);
+
+//? Color filter ?//
+$color-filter: invert(1);
+
+//? Box shadow ?//
+$box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+
+//? Font size ?//
+$small-font-size: 0.9em;
+$normal-font-size: 1em;
+
+//? Scroll bar colors ?//
+$scroll-bar-color: rgb(197, 202, 223);
+$scroll-thumb-color: rgb(112, 118, 138);
+$scroll-thumb-hover-color: rgb(69, 79, 107);
+
+
+
+
+
+
+
+//* Global style *//
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: $first-color;
+  background: $body-bg-color;
+  margin: 2rem 0 0 0;
+  transition: .5s ease;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color:inherit;
+  cursor: pointer;
+}
+
+//* Header *//
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backdrop-filter: blur(20px);
+  transition: .6s ease;
+  z-index: 999;
+
+}
+.nav-bar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1250px;
+  height: calc(4rem + 1rem);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  transition: .6s ease;
+}
+
+.nav-bar .logo {
+  color: $first-color;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.nav-items a {
+  color: $first-color;
+  font-size: $normal-font-size;
+  font-weight: 500;
+}
+
+.nav-items a:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-items a:hover {
+  color: $second-color;
+}
+
+//* Home *//
+.home {
+  position: relative;
+  flex-direction: column;
+  max-width: 1250px;
+  min-height: 100vh;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 4rem 2rem;
+}
+
+.home .home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.home-container .media-icons {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+
+.home-container .media-icons a {
+  color: $second-color;
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.home-container .media-icons a:hover {
+  color: $hover-color;
+}
+
+.home-container .info h2 {
+  font-size: 3.7em;
+  font-weight: 600;
+  line-height: 70px;
+}
+
+.home-container .info h3 {
+  color: $third-color;
+  font-feature-settings: 1.3em;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+.home-container .info p {
+  color: $third-color;
+  font-size: $normal-font-size;
+  max-width: 350px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 20px 30px;
+  background: $second-color;
+  color: $white-color;
+  font-size: $normal-font-size;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background: $hover-color;
+}
+
+.home-container .home-img {
+  position: relative;
+}
+
+.home-container .home-img img {
+  width: 90%;
+  transform: translate(0, 0);
+}
+
+.home .scroll-down {
+  margin-top: 20px;
+  color: $first-color;
+  font-size: $normal-font-size;
+  font-weight: 500;
+}
+.home .scroll-down i {
+  color: $second-color;
+  font-size: 1.2em;
+  animation: arrow-down ease 2s infinite;
+}
+
+@keyframes arrow-down {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(10px);
+  }
+}
+
+//* Common styles for all sections *//
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
