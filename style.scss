@@ -8,6 +8,7 @@ $first-color: rgb(14, 36, 49);
 $second-color: rgb(106, 89, 209);
 $third-color: rgb(119, 119, 119);
 $white-color: rgb(255, 255, 255);
+$gray-color: rgb(197, 202, 223);
 
 //? Hover colors ?//
 $hover-color: rgb(97, 79, 208);
@@ -354,4 +355,188 @@ a {
 .about-info .professional-list .list-item span {
   color: $third-color;
   font-size: $small-font-size;
+}
+
+//* Skills section *//
+.skills .container .content {
+  width: 100%;
+}
+
+.skills-description {
+  max-width: 700px;
+  margin-bottom: 50px;
+}
+
+.skills-description h3 {
+  margin-bottom: 5px;
+  font-size: 2em;
+}
+
+.skills-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.skills-info h4 {
+  margin-bottom: 20px;
+}
+
+.skills-info h4 label {
+  padding: 5px 15px;
+  background: $second-color;
+  border-radius: 5px;
+  color: $white-color;
+  font-size: $normal-font-size;
+  font-weight: 400;
+}
+
+.education-all {
+  margin-bottom: 80px;
+}
+
+.edu-list .item {
+  padding: 20px;
+  margin-top: 15px;
+  background: $card-bg-color;
+  box-shadow: $box-shadow;
+  border-bottom: 3px solid $second-color;
+  border-radius: 6px;
+  transition: .3s ease;
+}
+
+.edu-list .item .year {
+  margin-bottom: 5px;
+  font-size: $small-font-size;
+}
+
+.edu-list .item p {
+  color: $third-color;
+  font-size: $small-font-size;
+}
+
+.edu-list .item p span {
+  color: $first-color;
+  font-size: $normal-font-size;
+  font-weight: 500;
+}
+
+.bar {
+  margin-bottom: 10px;
+  padding: 20px;
+  background: $card-bg-color;
+  box-shadow: $box-shadow;
+  border-radius: 6px;
+  transition: .3s ease;
+}
+
+.bar .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  font-style: $small-font-size;
+}
+
+.bar .info span {
+  font-weight: 500;
+}
+
+.bar .line {
+  position: relative;
+  width: 100%;
+  height: 7px;
+  background: $gray-color;
+  border-radius: 2px;
+}
+
+.bar .line:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 95%;
+  background: $second-color;
+  border-radius: 2px;
+}
+
+.bar .html:before {
+  width: 80%;
+}
+.bar .css:before {
+  width: 70%;
+
+}
+.bar .javascript:before {
+  width: 15%;
+}
+
+.bar .react:before {
+  width: 10%;
+}
+
+.bar .typescript:before {
+  width: 5%;
+}
+
+.bar .webpack:before {
+  width: 50%;
+}
+
+.bar .gulp:before {
+  width: 50%;
+}
+
+.bar .sass:before {
+  width: 70%;
+}
+
+.bar .wordpress:before {
+  width: 7%;
+}
+
+.bar .git:before {
+  width: 50%;
+}
+
+.experience-card {
+  padding: 35px;
+  background: $card-bg-color;
+  border-bottom: 3px solid $second-color;
+  border-radius: 6px;
+  box-shadow: $box-shadow;
+  transition: .3s ease;
+}
+
+.experience-card .upper {
+  line-height: 30px;
+}
+
+.experience-card h3 {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.experience-card h5 {
+  font-size: $small-font-size;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.experience-card span {
+  color: $third-color;
+}
+
+.experience-card .hr {
+  margin: 10px 0 22px;
+  width: 100%;
+  height: 2px;
+  background: $line-color;
+}
+
+.edu-list .item:hover, .bar:hover, .experience-card:hover {
+  transform: scale(1.03);
 }
