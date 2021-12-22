@@ -270,6 +270,7 @@ a {
   margin-bottom: 2rem;
   background: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(70%, #0e2431));
   background: linear-gradient(to top, transparent 0%, #0e2431 70%);
+  background-clip: #d7d7d7;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: .1;
