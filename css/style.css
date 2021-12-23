@@ -312,7 +312,6 @@ a {
 }
 
 .about-img img {
-  width: 200px;
   max-width: 100%;
   min-width: 500px;
   border-radius: 10px;
@@ -810,5 +809,121 @@ a {
   right: 0;
   margin: 20px;
   cursor: pointer;
+}
+
+.get-in-touch {
+  margin-top: 70px;
+}
+
+.get-in-touch .container .content {
+  width: 100%;
+}
+
+.get-in-touch .contact-card {
+  position: relative;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  padding: 50px;
+  width: 90%;
+  background: white;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.contact-card .title {
+  text-transform: uppercase;
+  line-height: 60px;
+}
+
+.contact-card .title h4 {
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.contact-card .title h3 {
+  font-size: 2.3em;
+  font-weight: 400;
+}
+
+.contact-card .title h2 {
+  font-size: 4.2em;
+  font-weight: 700;
+  background: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(30%, #0e2431));
+  background: linear-gradient(to top, transparent 0%, #0e2431 30%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: .9;
+}
+
+.our-client .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.our-client .container .content {
+  width: 100%;
+}
+
+.client-swiper .swiper-wrapper {
+  margin-bottom: 30px;
+}
+
+.client-swiper .swiper-slide {
+  gap: 50px;
+  margin: 20px 0;
+}
+
+.client-img {
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.client-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.client-detalis {
+  max-width: 500px;
+}
+
+.client-detalis p {
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #d7d7d7;
+  font-size: 1.2em;
+  color: #777777;
+}
+
+.client-detalis h3 {
+  color: #0e2431;
+  font-size: 1.5em;
+}
+
+.client-detalis span {
+  color: #777777;
+  font-size: 1.1em;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  content: '';
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #6a59d1;
+  font-size: 3em;
+}
+
+.swiper-paginator-buller, .swiper-paginator-buller-active {
+  background: #6a59d1;
 }
 /*# sourceMappingURL=style.css.map */
