@@ -923,7 +923,9 @@ a {
   font-size: 3em;
 }
 
-.swiper-paginator-buller, .swiper-paginator-buller-active {
+.swiper-pagination-bullet, .swiper-pagination-bullet-active {
   background: #6a59d1;
+  width: 15px;
+  height: 15px;
 }
 /*# sourceMappingURL=style.css.map */

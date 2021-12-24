@@ -901,6 +901,8 @@ a {
   font-size: 3em;
 }
 
-.swiper-paginator-buller, .swiper-paginator-buller-active {
+.swiper-pagination-bullet, .swiper-pagination-bullet-active {
   background: $second-color;
+  width: 15px;
+  height: 15px;
 }
