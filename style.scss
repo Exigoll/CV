@@ -678,6 +678,7 @@ a {
 
 
 //* Portfolio section *//
+//!---->section my app!//
 .portfolio .container .content {
   width: 100%;
 }
@@ -905,4 +906,99 @@ a {
   background: $second-color;
   width: 15px;
   height: 15px;
+}
+
+
+
+
+
+
+
+
+
+//* Section - contact *//
+.contact .container .content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contact-left h2 {
+  margin-bottom: 40px;
+  font-size: 2.1em;
+  font-weight: 800;
+}
+
+.contact-list li {
+  margin-bottom: 40px;
+}
+
+.contact-list li h3 {
+  margin-bottom: 10px;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.contact-list li h3 i {
+  margin-right: 10px;
+  color: $third-color;
+  font-size: 1.3em;
+}
+.contact-list li span {
+  margin-left: 40px;
+  color: $third-color;
+}
+
+.contact-list li span a {
+  color: $third-color;
+}
+
+.contact-right p {
+  margin-bottom: 30px;
+  color: $third-color;
+  font-size: 1.6em;
+}
+
+.contact-right p span {
+  color: $first-color;
+  font-weight: 700;
+}
+
+.contact-form input, .contact-form textarea {
+  margin-bottom: 20px;
+  padding: 15px 40px 40px 20px;
+  border: none;
+  border-radius: 5px;
+  background: $transparent-color-02;
+  color: $first-color;
+  font-size: $normal-font-size;
+}
+
+.contact-form textarea {
+  width: 100%;
+  resize: none;
+}
+
+::placeholder {
+  color: $first-color;
+}
+
+.contact-form .first-row input {
+  width: 100%;
+}
+
+.contact-form .second-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-form .second-row input {
+  width: 48%;
+}
+
+.contact-form .btn {
+  margin-top: 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
