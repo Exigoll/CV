@@ -40,6 +40,31 @@ $scroll-thumb-color: rgb(112, 118, 138);
 $scroll-thumb-hover-color: rgb(69, 79, 107);
 
 
+.dark-theme {
+  //? Theme colors ?//
+$first-color: rgb(14, 36, 49);
+$second-color: rgb(106, 89, 209);
+$third-color: rgb(169, 175, 195);
+$white-color: rgb(255, 255, 255);
+$gray-color: rgb(197, 202, 223);
+
+//? Background colors ?//
+$body-bg-color: rgb(14, 27, 49);
+$card-bg-color: rgb(19, 35, 71);
+$modal-bg-color: rgb(16, 32, 72);
+$bg-transparent-color: rgba(255, 255, 255, 0.1);
+$transparent-color-01: rgba(255, 255, 255, 0.1);
+$line-color: #454f6b;
+
+//? Color filter ?//
+$color-filter: invert(0);
+
+//? Scroll bar colors ?//
+$scroll-bar-color: #c1ceff;
+$scroll-thumb-color: #282f4e;
+$scroll-thumb-hover-color: #454f6b;
+
+}
 
 
 
@@ -72,6 +97,54 @@ a {
   color:inherit;
   cursor: pointer;
 }
+
+
+
+//* Scroll to top button *//
+.scrolltotop-btn {
+  position: fixed;
+  right: 0;
+  bottom: 20px;
+  width: 45px;
+  height: 45px;
+  background: $second-color;
+  color: $white-color;
+  font-size: $small-font-size;
+  border-radius: 3px;
+  opacity: 0;
+  transition: .5s ease;
+  cursor: pointer;
+  z-index: 99999;
+}
+
+.scrolltotop-btn.active {
+  right: 20px;
+  pointer-events: all;
+  opacity: 1;
+}
+
+
+
+//* Switch theme *//
+.theme-btn {
+  position: fixed;
+  right: 0;
+  top: 100px;
+  width: 50px;
+  height: 50px;
+  background: $transparent-color-01;
+  backdrop-filter: blur(20px);
+  font-size: 1.2em;
+  border-radius: 5px 0 0 5px;
+  box-shadow: $box-shadow;
+  cursor: pointer;
+  z-index: 9999999;
+}
+
+.theme-btn .fa-sun {
+  display: none;
+}
+
 
 
 
@@ -138,6 +211,10 @@ a {
   color: $first-color;
   font-size: $normal-font-size;
   font-weight: 500;
+}
+
+.nav-items a.active {
+  color: $second-color
 }
 
 .nav-items a:not(:last-child) {
@@ -282,7 +359,6 @@ a {
   font-weight: 800;
   margin-bottom: 2rem;
   background: linear-gradient(to top, transparent 0%, $first-color 70%);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: .1;
@@ -834,7 +910,6 @@ a {
   font-size: 4.2em;
   font-weight: 700;
   background: linear-gradient(to top, transparent 0%, $first-color 30%);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: .9;
@@ -1001,4 +1076,81 @@ a {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+
+
+
+//* Footer *//
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 2rem;
+  margin-top: 50px;
+  width: 100%;
+  background: $second-color;
+  color: $white-color;
+}
+
+.footer a {
+  color: $white-color;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1150px;
+}
+
+.footer-container .about h2 {
+  font-size: 3em;
+  font-weight: 600;
+  background: linear-gradient(to top, transparent 0%, $white-color 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: .8;
+}
+
+.footer-container .about p {
+  margin-bottom: 30px;
+  font-style: $normal-font-size;
+  font-weight: 300;
+}
+
+.footer-container .info,
+.footer-container .follow {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-container .info h3,
+.footer-container .follow h3 {
+  margin-bottom: 30px;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.footer-container .info ul,
+.footer-container .follow ul {
+  display: flex;
+}
+
+.footer-container .info a {
+  margin: 20px;
+}
+
+.footer-container .follow a {
+  margin: 20px;
+  font-size: 1.5em;
+}
+
+.footer-copyright p {
+  margin-top: 50px;
+  font-size: $normal-font-size;
+  font-weight: 300;
 }
