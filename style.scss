@@ -4,66 +4,63 @@
 
 
 //* Variables *//
+  //? Theme colors ?//
+  $first-color: rgb(14, 36, 49);
+  $second-color: rgb(106, 89, 209);
+  $third-color: rgb(119, 119, 119);
+  $white-color: rgb(255, 255, 255);
+  $gray-color: rgb(197, 202, 223);
 
-//? Theme colors ?//
-$first-color: rgb(14, 36, 49);
-$second-color: rgb(106, 89, 209);
-$third-color: rgb(119, 119, 119);
-$white-color: rgb(255, 255, 255);
-$gray-color: rgb(197, 202, 223);
+  //? Hover colors ?//
+  $hover-color: rgb(97, 79, 208);
 
-//? Hover colors ?//
-$hover-color: rgb(97, 79, 208);
+  //? Background colors ?//
+  $body-bg-color: rgb(254, 254, 254);
+  $card-bg-color: rgb(255, 255, 255);
+  $modal-bg-color: rgb(255, 255, 255);
+  $bg-transparent-color: rgba(0, 0, 0, 0.1);
+  $transparent-color-01: rgba(0, 0, 0, 0.1);
+  $transparent-color-02: rgba(106, 89, 209, 0.1);
+  $line-color: rgb(215, 215, 215);
 
-//? Background colors ?//
-$body-bg-color: rgb(254, 254, 254);
-$card-bg-color: rgb(255, 255, 255);
-$modal-bg-color: rgb(255, 255, 255);
-$bg-transparent-color: rgba(0, 0, 0, 0.1);
-$transparent-color-01: rgba(0, 0, 0, 0.1);
-$transparent-color-02: rgba(106, 89, 209, 0.1);
-$line-color: rgb(215, 215, 215);
+  //? Color filter ?//
+  $color-filter: invert(1);
 
-//? Color filter ?//
-$color-filter: invert(1);
+  //? Box shadow ?//
+  $box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 
-//? Box shadow ?//
-$box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  //? Font size ?//
+  $small-font-size: 0.9em;
+  $normal-font-size: 1em;
 
-//? Font size ?//
-$small-font-size: 0.9em;
-$normal-font-size: 1em;
-
-//? Scroll bar colors ?//
-$scroll-bar-color: rgb(197, 202, 223);
-$scroll-thumb-color: rgb(112, 118, 138);
-$scroll-thumb-hover-color: rgb(69, 79, 107);
-
+  //? Scroll bar colors ?//
+  $scroll-bar-color: rgb(197, 202, 223);
+  $scroll-thumb-color: rgb(112, 118, 138);
+  $scroll-thumb-hover-color: rgb(69, 79, 107);
 
 .dark-theme {
   //? Theme colors ?//
-$first-color: rgb(14, 36, 49);
-$second-color: rgb(106, 89, 209);
-$third-color: rgb(169, 175, 195);
-$white-color: rgb(255, 255, 255);
-$gray-color: rgb(197, 202, 223);
+  $first-color: rgb(14, 36, 49);
+  $second-color: rgb(106, 89, 209);
+  $third-color: rgb(169, 175, 195);
+  $white-color: rgb(255, 255, 255);
+  $gray-color: rgb(197, 202, 223);
 
-//? Background colors ?//
-$body-bg-color: rgb(14, 27, 49);
-$card-bg-color: rgb(19, 35, 71);
-$modal-bg-color: rgb(16, 32, 72);
-$bg-transparent-color: rgba(255, 255, 255, 0.1);
-$transparent-color-01: rgba(255, 255, 255, 0.1);
-$line-color: #454f6b;
+  //? Background colors ?//
+  $body-bg-color: rgb(91, 103, 122);
+  $card-bg-color: rgb(19, 35, 71);
+  $modal-bg-color: rgb(16, 32, 72);
+  $bg-transparent-color: rgba(255, 255, 255, 0.1);
+  $transparent-color-01: rgba(255, 255, 255, 0.1);
+  $line-color: #454f6b;
 
-//? Color filter ?//
-$color-filter: invert(0);
+  //? Color filter ?//
+  $color-filter: invert(0);
 
-//? Scroll bar colors ?//
-$scroll-bar-color: #c1ceff;
-$scroll-thumb-color: #282f4e;
-$scroll-thumb-hover-color: #454f6b;
-
+  //? Scroll bar colors ?//
+  $scroll-bar-color: #c1ceff;
+  $scroll-thumb-color: #282f4e;
+  $scroll-thumb-hover-color: #454f6b;
 }
 
 
