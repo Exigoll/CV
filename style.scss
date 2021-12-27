@@ -1,5 +1,3 @@
-// block - цели и увлечения
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
@@ -11,6 +9,7 @@ $second-color: rgb(106, 89, 209);
 $third-color: rgb(119, 119, 119);
 $white-color: rgb(255, 255, 255);
 $gray-color: rgb(197, 202, 223);
+$red-color: rgb(255, 0, 0);
 
 //? Hover colors ?//
 $hover-color: rgb(97, 79, 208);
@@ -63,6 +62,7 @@ $color-filter: invert(0);
 $scroll-bar-color: #c1ceff;
 $scroll-thumb-color: #282f4e;
 $scroll-thumb-hover-color: #454f6b;
+
 
 }
 
@@ -141,11 +141,13 @@ a {
   z-index: 9999999;
 }
 
-.theme-btn .fa-sun {
+.theme-btn .fa-sun, .theme-btn.sun .fa-moon {
   display: none;
 }
 
-
+.theme-btn.sun .fa-sun  {
+  display: block;
+}
 
 
 
@@ -225,6 +227,9 @@ a {
   color: $second-color;
 }
 
+.nav-menu-btn {
+  display: none;
+}
 
 
 
@@ -305,7 +310,8 @@ a {
 }
 
 .home-container .home-img img {
-  width: 90%;
+  width: 100%;
+  min-width: 400px;
   border-radius: 10px;
   transform: translate(0, 0);
 }
@@ -340,7 +346,7 @@ a {
 
 .section {
   position: relative;
-  width: 1150px;
+  max-width: 1150px;
   margin-left: auto;
   margin-right: auto;
   padding: 6rem 2rem 2rem;
@@ -348,7 +354,7 @@ a {
 
 .sub-section {
   position: relative;
-  width: 1150px;
+  max-width: 1150px;
   margin-left: auto;
   margin-right: auto;
   padding: 6rem 0;
@@ -402,7 +408,7 @@ a {
 }
 
 .about-img img {
-  max-width: 100%;
+  max-width: 600px;
   min-width: 500px;
   border-radius: 10px;
 }
@@ -438,6 +444,14 @@ a {
 .about-info .professional-list {
   display: flex;
   column-gap: 30px;
+}
+
+.about-info .professional-list .list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+  margin-bottom: 20px;
 }
 
 .about-info .professional-list .list-item h3 {
@@ -580,7 +594,7 @@ a {
 }
 
 .bar .gulp:before {
-  width: 50%;
+  width: 80%;
 }
 
 .bar .sass:before {
@@ -649,7 +663,7 @@ a {
 }
 
 .service-card {
-  padding: 50px;
+  padding: 80px 50px;
   background: $card-bg-color;
   border-bottom: 3px solid $second-color;
   border-radius: 6px;
@@ -754,7 +768,6 @@ a {
 
 
 //* Portfolio section *//
-//!---->section my app!//
 .portfolio .container .content {
   width: 100%;
 }
@@ -1079,8 +1092,6 @@ a {
 }
 
 
-
-
 //* Footer *//
 
 .footer {
@@ -1153,4 +1164,118 @@ a {
   margin-top: 50px;
   font-size: $normal-font-size;
   font-weight: 300;
+}
+
+
+
+
+
+
+
+
+//? Addaptive ?//
+@media screen and (max-width: 1070px) {
+  //* Header navigation menu *//
+  .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: $transparent-color-01;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease;
+  }
+
+  .navigation.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .nav-items {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 40px;
+    width: 600px;
+    max-width: 600px;
+    background: $modal-bg-color;
+    box-shadow: $box-shadow;
+    border-radius: 10px;
+    transform: translateY(-50px);
+    transition: .3s ease;
+  }
+
+  .navigation.active .nav-items {
+    transform: translateY(0);
+
+  }
+
+  .nav-items a {
+    margin: 15px 50px;
+  }
+
+  .nav-close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    background: url(/assets/svg/close.svg) no-repeat center / 12px;
+    cursor: pointer;
+  }
+
+  .nav-menu-btn {
+    display: block;
+    background: url('/assets/svg/burger.svg') no-repeat center / 30px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  //* Home section *//
+  .home .home-container .info {
+    font-size: 0.85rem;
+  }
+  //* About section *//
+  .about .container .content {
+    display: grid;
+    row-gap: 20px;
+    width: 100%;
+  }
+  .about-img {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .about-info {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .about-info .professional-list {
+    flex-direction: column;
+  }
+
+  .about-info .professional-list .list-item {
+    justify-content: start;
+  }
+  //* Get-in-touch *//
+
+
+
+  //* Our clients *//
+
+  //* Contact section *//
+
+  //* Footer *//
+
+
 }
