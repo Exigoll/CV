@@ -1106,11 +1106,6 @@ a {
   cursor: pointer;
 }
 
-.contact-form .btn span {
-  font-size: 0.6rem;
-  color: red;
-}
-
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
