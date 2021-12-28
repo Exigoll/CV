@@ -127,7 +127,7 @@ a {
 .theme-btn {
   position: fixed;
   right: 0;
-  top: 100px;
+  top: 95px;
   width: 50px;
   height: 50px;
   background: $transparent-color-01;
@@ -254,7 +254,7 @@ a {
 .home-container .media-icons {
   display: flex;
   flex-direction: column;
-  margin-right: 40px;
+  margin-right: 20px;
 }
 
 .home-container .media-icons a {
@@ -305,13 +305,15 @@ a {
 
 .home-container .home-img {
   position: relative;
+  max-width: 50%;
+  min-width: 50%; 
+  border-radius: 10px;
+  transform: translate(0, 0);
 }
 
 .home-container .home-img img {
-  width: 100%;
-  min-width: 400px;
-  border-radius: 10px;
-  transform: translate(0, 0);
+  max-width: 90%;
+  min-width: 20%; 
 }
 
 .home .scroll-down {
@@ -352,7 +354,7 @@ a {
 
 .sub-section {
   position: relative;
-  max-width: 1150px;
+  max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
   padding: 6rem 0;
@@ -406,8 +408,7 @@ a {
 }
 
 .about-img img {
-  max-width: 600px;
-  min-width: 500px;
+  max-width: 100%;
   border-radius: 10px;
 }
 
@@ -882,50 +883,6 @@ a {
   cursor: pointer;
 }
 
-//* Get in touch *//
-.get-in-touch {
-  margin-top: 70px;
-}
-
-.get-in-touch .container .content {
-  width: 100%;
-}
-
-.get-in-touch .contact-card {
-  position: relative;
-  column-gap: 50px;
-  padding: 50px;
-  width: 90%;
-  background: $card-bg-color;
-  box-shadow: $box-shadow;
-  border-radius: 10px;
-}
-
-.contact-card .title {
-  text-transform: uppercase;
-  line-height: 60px;
-}
-
-.contact-card .title h4 {
-  font-size: 1.2em;
-  font-weight: 300;
-  line-height: 20px;
-}
-
-.contact-card .title h3 {
-  font-size: 2.3em;
-  font-weight: 400;
-}
-
-.contact-card .title h2 {
-  font-size: 4.2em;
-  font-weight: 700;
-  background: linear-gradient(to top, transparent 0%, $first-color 30%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: .9;
-}
-
 //* Swiper *// // изменить на путешествия в страны?
 .our-client .container {
   flex-direction: column;
@@ -1172,7 +1129,7 @@ a {
 
 
 //? Addaptive ?//
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 1140px) {
   //* Header navigation menu *//
   .navigation {
     position: fixed;
@@ -1211,8 +1168,8 @@ a {
   }
 
   .navigation.active .nav-items {
+    margin-top: 126px;
     transform: translateY(0);
-
   }
 
   .nav-items a {
@@ -1239,8 +1196,8 @@ a {
   }
 
   //* Home section *//
-  .home .home-container .info {
-    font-size: 0.85rem;
+  .home .home-container .info h2 {
+    font-size: 3rem;
   }
   //* About section *//
   .about .container .content {
@@ -1248,6 +1205,7 @@ a {
     row-gap: 20px;
     width: 100%;
   }
+  
   .about-img {
     min-width: 0;
     width: 100%;
@@ -1265,15 +1223,212 @@ a {
   .about-info .professional-list .list-item {
     justify-content: start;
   }
-  //* Get-in-touch *//
 
 
 
   //* Our clients *//
-
+  .client-swiper .swiper-slide {
+    flex-direction: column;
+  }
+  
+  .client-detalis {
+    text-align: center;
+  }
   //* Contact section *//
+  .contact .content {
+    flex-direction: column;
+    font-size: 0.9rem;
+  }
 
+  .contact .contact-left {
+    margin-bottom: 40px;
+  }
+
+  .contact-form .second-row {
+    flex-direction: column;
+  }
+
+  .contact-form .second-row input {
+    width: 100%;
+  }
   //* Footer *//
+  footer .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-container .about,
+  .footer-container .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer-container .info ul {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer-container .info ul li {
+    margin: 5px 0;
+  }
+  .footer-container .hr {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 10px 0 22px;
+  }
 
 
+}
+
+
+@media (max-width: 1058px) {
+  //* Home section *//
+  .home .home-container .info h2 {
+    font-size: 2.8rem;
+  }
+  .home .home-container .info h3 {
+    font-size: 1.2rem;
+  }
+  .home .home-container .info p {
+    font-size: 1rem;
+  }
+  
+}
+
+
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 900px) {
+  //* Home section *//
+  .home .home-container .info h2 {
+    font-size: 2.2rem;
+    line-height: 50px;
+  }
+  .home .home-container .info h3 {
+    font-size: 1.2rem;
+    line-height: 30px;
+  }
+  .home .home-container .info p {
+    font-size: 0.8rem;
+  }
+  
+}
+
+@media (max-width: 740px) {
+//* Home section *//
+.home .home-container .info h2 {
+  font-size: 1.7rem;
+  line-height: 40px;
+}
+.home .home-container .info h3 {
+  font-size: 1.2rem;
+  line-height: 25px;
+}
+.home .home-container .info p {
+  font-size: 0.6rem;
+}
+.btn {
+  margin-top: 10px;
+  padding: 10px 15px;
+  font-size: 0.7em;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 650px) {
+
+}
+
+@media (max-width: 600px) {
+  .home .home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .home-container .media-icons {
+    display: flex;
+    flex-direction: row;
+    order: 3;
+  }
+
+  .home-container .media-icons a {
+    padding-left: 20px;
+  }
+
+  .home-container .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 2;
+    width: 100%;
+  }
+
+  .home .home-container .info h2 {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 50px;
+  }
+
+  .home .home-container .info p {
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .home-container .home-img {
+    order: 1;
+    max-width: 100%;
+  }
+
+  .home-container .home-img img {
+    max-width: 100%;
+  }
+  //* Skills *//
+  .experience-card .upper {
+    line-height: 25px;
+  }
+  .client-img {
+    width: 290px;
+    height: 300px;
+  }
+  .swiper-button-next, 
+  .swiper-button-prev {
+    font-size: 2em;
+  }
+  .swiper-pagination-bullet, 
+  .swiper-pagination-bullet-active {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 520px) {
+  .section-title-01 {
+    font-size: 3.5em;
+  }
+}
+
+@media (max-width: 420px) {
+  .home .home-container .info p {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 380px) {
+  .section-title-01 {
+    font-size: 3.2em;
+  }
 }
