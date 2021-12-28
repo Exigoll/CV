@@ -1130,6 +1130,12 @@ a {
 
 //? Addaptive ?//
 @media screen and (max-width: 1140px) {
+  //* Switch theme *//
+  .theme-btn {
+    position: fixed;
+    right: 120px;
+    top: 15px;
+  }
   //* Header navigation menu *//
   .navigation {
     position: fixed;
