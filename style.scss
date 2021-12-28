@@ -1183,13 +1183,13 @@ a {
     margin: 10px;
     width: 40px;
     height: 40px;
-    background: url(/assets/svg/close.svg) no-repeat center / 12px;
+    background: url(../assets/svg/close.svg) no-repeat center / 12px;
     cursor: pointer;
   }
 
   .nav-menu-btn {
     display: block;
-    background: url('/assets/svg/burger.svg') no-repeat center / 30px;
+    background: url(../assets/svg/burger.svg) no-repeat center / 30px;
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -1234,6 +1234,7 @@ a {
   .client-detalis {
     text-align: center;
   }
+
   //* Contact section *//
   .contact .content {
     flex-direction: column;
@@ -1251,6 +1252,7 @@ a {
   .contact-form .second-row input {
     width: 100%;
   }
+
   //* Footer *//
   footer .footer-container {
     flex-direction: column;
@@ -1272,6 +1274,7 @@ a {
   .footer-container .info ul li {
     margin: 5px 0;
   }
+
   .footer-container .hr {
     width: 100%;
     height: 2px;
@@ -1288,9 +1291,11 @@ a {
   .home .home-container .info h2 {
     font-size: 2.8rem;
   }
+
   .home .home-container .info h3 {
     font-size: 1.2rem;
   }
+
   .home .home-container .info p {
     font-size: 1rem;
   }
@@ -1309,10 +1314,12 @@ a {
     font-size: 2.2rem;
     line-height: 50px;
   }
+
   .home .home-container .info h3 {
     font-size: 1.2rem;
     line-height: 30px;
   }
+
   .home .home-container .info p {
     font-size: 0.8rem;
   }
@@ -1321,17 +1328,21 @@ a {
 
 @media (max-width: 740px) {
 //* Home section *//
+
 .home .home-container .info h2 {
   font-size: 1.7rem;
   line-height: 40px;
 }
+
 .home .home-container .info h3 {
   font-size: 1.2rem;
   line-height: 25px;
 }
+
 .home .home-container .info p {
   font-size: 0.6rem;
 }
+
 .btn {
   margin-top: 10px;
   padding: 10px 15px;
@@ -1396,18 +1407,22 @@ a {
   .home-container .home-img img {
     max-width: 100%;
   }
+
   //* Skills *//
   .experience-card .upper {
     line-height: 25px;
   }
+
   .client-img {
     width: 290px;
     height: 300px;
   }
+
   .swiper-button-next, 
   .swiper-button-prev {
-    font-size: 2em;
+    display: none;
   }
+
   .swiper-pagination-bullet, 
   .swiper-pagination-bullet-active {
     width: 10px;

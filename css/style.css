@@ -1222,12 +1222,12 @@ a {
     margin: 10px;
     width: 40px;
     height: 40px;
-    background: url(/assets/svg/close.svg) no-repeat center/12px;
+    background: url(../assets/svg/close.svg) no-repeat center/12px;
     cursor: pointer;
   }
   .nav-menu-btn {
     display: block;
-    background: url("/assets/svg/burger.svg") no-repeat center/30px;
+    background: url(../assets/svg/burger.svg) no-repeat center/30px;
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -1451,7 +1451,7 @@ a {
   }
   .swiper-button-next,
   .swiper-button-prev {
-    font-size: 2em;
+    display: none;
   }
   .swiper-pagination-bullet,
   .swiper-pagination-bullet-active {
