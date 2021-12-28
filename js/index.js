@@ -172,7 +172,7 @@ $(document).ready(function() {
 		var th = $(this)
 		$.ajax({
 			type: "POST",
-			url: "mail.php", //Change
+			url: "../mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
 			alert("Я отвечу Вам в ближайшее время!")
