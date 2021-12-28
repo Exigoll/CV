@@ -165,26 +165,3 @@ ScrollReveal().reveal('.experience-card, .service-card, .education, .portfolio .
 ScrollReveal().reveal('footer .group', {delay: 500, origin: 'top', interval: 200})
 
 
-// Send mail
-$(document).ready(function() {
-	//E-mail Ajax Send
-	$("form").submit(function() { //Change
-		var th = $(this)
-		$.ajax({
-			type: "POST",
-			url: "../mail.php", //Change
-			data: th.serialize()
-		}).done(function() {
-			alert("Я отвечу Вам в ближайшее время!")
-			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset")
-			}, 1000)
-		})
-		return false
-	})
-})
-
-
-
-
