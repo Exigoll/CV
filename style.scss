@@ -1134,7 +1134,9 @@ a {
   .theme-btn {
     position: fixed;
     right: 120px;
-    top: 15px;
+    top: 0;
+    box-shadow: none;
+    background: none;
   }
   //* Header navigation menu *//
   .navigation {
