@@ -1157,6 +1157,11 @@ a {
 }
 
 @media screen and (max-width: 1140px) {
+  .theme-btn {
+    position: fixed;
+    right: 120px;
+    top: 15px;
+  }
   .navigation {
     position: fixed;
     top: 0;
