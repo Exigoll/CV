@@ -62,8 +62,6 @@ $color-filter: invert(0);
 $scroll-bar-color: #c1ceff;
 $scroll-thumb-color: #282f4e;
 $scroll-thumb-hover-color: #454f6b;
-
-
 }
 
 
@@ -110,7 +108,7 @@ a {
   background: $second-color;
   color: $white-color;
   font-size: $small-font-size;
-  border-radius: 3px;
+  border-radius: 4px;
   opacity: 0;
   transition: .5s ease;
   cursor: pointer;
