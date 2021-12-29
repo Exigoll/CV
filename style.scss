@@ -543,7 +543,7 @@ a {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 5px;
-  font-style: $small-font-size;
+  font-size: $small-font-size;
 }
 
 .bar .info span {
@@ -860,7 +860,9 @@ a {
   transform: translateY(-50px);
   transition: .5s ease;
 }
-
+.portfolio-model .portfolio-model-body p span {
+  color: $second-color;
+}
 .portfolio-model-body h3 {
   font-size: 1.5em;
 }
