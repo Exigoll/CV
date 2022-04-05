@@ -603,15 +603,15 @@ a {
 }
 
 .bar .javascript:before {
-  width: 15%;
+  width: 50%;
 }
 
 .bar .react:before {
-  width: 10%;
+  width: 50%;
 }
 
 .bar .typescript:before {
-  width: 5%;
+  width: 45%;
 }
 
 .bar .jquery:before {
